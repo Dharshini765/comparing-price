@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison with Sentiment Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Price Comparison with Sentiment Analysis</h1>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchBox" placeholder="Enter product name...">
+    <button onclick="fetchPrices()">Search</button>
+
+    <!-- Price Table -->
+    <table id="priceTable">
+        <tr>
+            <th>Store</th>
+            <th>Price</th>
+            <th>Sentiment</th>
+        </tr>
+    </table>
+
+    <!-- Include JavaScript files -->
+    <script src="https://cdn.jsdelivr.net/npm/sentiment@5.0.2/sentiment.min.js"></script> <!-- Sentiment.js -->
+    <script src="script.js"></script> <!-- Main JS file -->
+</body>
+</html>
